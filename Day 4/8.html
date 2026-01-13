@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+    <style>
+        body {
+            background-color: #f0c36d;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 50px;
+        }
+
+        input {
+            margin-bottom: 5px;
+        }
+
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Enter User Information</h2>
+
+<form id="userForm">
+    <div>
+        <label>Name:</label>
+        <input type="text" id="name">
+        <span class="error" id="nameError"></span>
+    </div>
+    <div>
+        <label>Age:</label>
+        <input type="text" id="age">
+        <span class="error" id="ageError"></span>
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="text" id="email">
+        <span class="error" id="emailError"></span>
+    </div>
+    <button type="button" onclick="addUser()">Add</button>
+    <button type="reset" onclick="resetErrors()">Reset</button>
+</form>
+
+<table id="userTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- user data will appear here -->
+    </tbody>
+</table>
+
+<script src="8.js"></script>
+</body>
+</html>

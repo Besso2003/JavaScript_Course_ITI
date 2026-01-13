@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <style>
+        #container {
+            width: 300px;
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="container">
+    <img id="photo" src="images/1.jpg">
+    <br>
+
+    <button onclick="prev()">Previous</button>
+    <button onclick="next()">Next</button>
+    <button onclick="slideshow()">Slideshow</button>
+    <button onclick="stopShow()">Stop</button>
+</div>
+
+<script src="4.js"></script>
+</body>
+</html>
